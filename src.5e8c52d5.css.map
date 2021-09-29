@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,KACE,qBACF,CAEA,iBAGE,kBACF,CAEA,cAKE,YACF","file":"src.5e8c52d5.css","sourceRoot":"../src","sourcesContent":["html {\n  box-sizing: border-box;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: inherit;\n}\n\nh1,\nh2,\nh3,\np,\nul {\n  margin-top: 0;\n}\n"]}
