@@ -12,17 +12,18 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <div class="container">
   <form class="search-form js-search-form" id="search-form">
-    <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
+    <input class="input" type="text" name="query" autocomplete="off" placeholder="Search images..." />
     <button class="btn js-btn" type="submit"> search</button>
   </form>
   <ul class="gallery js-gallery">
     <!-- Список <li> с карточками изображений -->
   </ul>
-  <button type="button" class="load-more btn js-load-more" data-action="load-more">
+  <button type="button" class="btn secondary js-load-more" data-action="load-more">
     Load more
   </button>
-
+</div>
   <script src="./index.js"></script>
 </body>
 </html>

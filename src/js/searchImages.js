@@ -20,10 +20,8 @@ function onSearch(evt) {
     return 
   }
   
-  // Присвоили сеттер
   API.searchQuery = value;
 
-  // на первую загрузку возвращ к первой стр нового запроса
   API.resetPage();
   const url = API.getUrl();
   console.log(url);
@@ -42,7 +40,6 @@ function onSearch(evt) {
     refs.loadMoreBtn.style.display = "inline-block";
     success('Ваш запрос успешно найден!)');
 
-    // вызываем метод
     API.incrementPage();
   }).catch(error => {
     console.log(error);
@@ -60,7 +57,6 @@ function onLoadMore() {
     const markup = imageCardMarkup(data.hits);
     refs.galleryList.insertAdjacentHTML('beforeend', markup);
 
-    // вызываем метод
     API.incrementPage();
 
     const element = document.getElementById((data.hits[0].id)
